@@ -31,4 +31,4 @@ function calculateNetSalary(basicSalary, benefits) {
 }
 
 // Example usage:
-calculateNetSalary(30000, 5000);
+calculateNetSalary(100000, 50000);
