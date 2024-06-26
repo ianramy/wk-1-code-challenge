@@ -17,5 +17,5 @@ function speedDetector(speed) {
 }
 
 // Examples used:
-speedDetector(125); 
+speedDetector(80); 
 speedDetector(135);

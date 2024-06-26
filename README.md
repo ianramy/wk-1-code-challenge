@@ -4,9 +4,9 @@ The javascript program prompts the user to input student marks. It then makes su
 ### To display message to the screen with the student's grade window.alert is used. A > 79, B - 60 to 79, C - 59 to 49, D - 40 to 49, E - less 40.
 
 ## Challenge 2: Speed Detector (Toy Problem)
-The Speed detector program takes as input the speed of a car. Using if statement, it checks the speed of the car and if it is less than 70, it prints “Ok”. Else, for every 5 km/s above the speed limit (70), it outputs to the driver one demerit point and print the total number of demerit points.
+The Speed detector program takes as input the speed of a car. Using if statement, it checks the speed of the car and if it is less than 70, it prints “Ok”. Else, for every 5 km/s above the speed limit (70), it should give the driver one demerit point and print the total number of demerit points.
 
-### For example, if the driver gets more than 12 points, the function should print: “License suspended”. Examples used (125) & (135)
+### For example; if the speed is 80, it should print: “Points: 2”. If the driver gets more than 12 points, the function should print: “License suspended”.
 
 # Challenge 3: Net Salary Calculator (Toy Problem)
 
