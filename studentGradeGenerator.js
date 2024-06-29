@@ -1,31 +1,19 @@
-// studentGradeGenerator.js
-const readline = require('readline');
+const prompt = require('prompt-sync')();
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
-
-function studentGradeGenerator() {
-  rl.question('Enter student marks (0-100): ', (input) => {
-    let marks = parseInt(input, 10);
-    
-    if (marks > 100 || marks < 0 || isNaN(marks)) {
-      console.log("Invalid marks. Please enter a number between 0 and 100.");
-    } else if (marks > 79) {
+function gradeGenerator() {
+    const marks = parseInt(prompt("Enter student marks (0-100): "));
+ 
+  if (marks > 79) {
       console.log("Grade: A");
-    } else if (marks >= 60) {
+  } else if (marks >= 60) {
       console.log("Grade: B");
-    } else if (marks >= 50) {
+  } else if (marks >= 50) {
       console.log("Grade: C");
-    } else if (marks >= 40) {
+  } else if (marks >= 40) {
       console.log("Grade: D");
-    } else {
+  } else {
       console.log("Grade: E");
-    }
-
-    rl.close();
-  });
+  }
 }
 
-studentGradeGenerator();
+gradeGenerator();
