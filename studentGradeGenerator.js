@@ -1,8 +1,26 @@
+// Import prompt-sync for user input
 const prompt = require('prompt-sync')();
 
-function gradeGenerator() {
-    const marks = parseInt(prompt("Enter student marks (0-100): "));
- 
+// Create studentGradeGenerator function
+function studentGradeGenerator() {
+let marks;
+  
+    // Using a loop function
+    while (true) {
+
+      //Prompt for marks input
+      marks = prompt("Enter student marks (0-100): ");
+      
+      // Validate the marks input
+      marks = parseFloat(marks);
+      if (!isNaN(marks) && marks >= 0 && marks <= 100) {
+          break;
+      } else {
+          console.log("Invalid input. Please enter a number between 0 and 100.");
+      }
+  }
+  
+  // Grade determination
   if (marks > 79) {
       console.log("Grade: A");
   } else if (marks >= 60) {
@@ -15,5 +33,6 @@ function gradeGenerator() {
       console.log("Grade: E");
   }
 }
-
-gradeGenerator();
+ 
+//Run the function
+studentGradeGenerator();
