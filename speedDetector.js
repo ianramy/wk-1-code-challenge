@@ -21,7 +21,7 @@ function speedDetector() {
     }
 
        // Speed points allocation
-    if (speed < 70) {
+    if (speed <=70) {
         console.log("Ok");
     } else {
         const points = Math.floor((speed - 70) / 5);
